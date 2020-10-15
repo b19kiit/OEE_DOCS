@@ -1,10 +1,14 @@
 ### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
 
+***
+
 # User Management System (UMS)
 
 ## Introduction
 
 UMS is a stateless micro service, developed to enable ThingsGoSocial users to access all the services with single user autorization.
+
+***
 
 ## Endpoints
 
@@ -47,6 +51,8 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
         Wrong api key
         ```
         
+***
+
 ### `api`/`user`/`login`
 
 #### Request:
@@ -85,6 +91,8 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
         ```
         Wrong api key
         ```
+
+***
 
 ### `api`/`project`  - **POST**
 
