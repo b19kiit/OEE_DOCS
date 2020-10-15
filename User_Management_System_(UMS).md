@@ -57,6 +57,7 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
 
 #### Request:
 
+**Body**
 ```js
 {
     "identifier": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
@@ -69,6 +70,7 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
 
 - **Success**
 
+**Body**
 ```js
 { 
     "msg": "logged in",
@@ -96,10 +98,11 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
 
 ### `api`/`project`  - **POST**
 
-TO add project to specific any user
+TO add project to any specific user
 
 #### Request:
 
+**Body**
 ```js
 {
     "username": <string>,
@@ -111,11 +114,40 @@ TO add project to specific any user
 #### Response:
 
 **Success**
+
+**Body**
 ```js
 {
     name: <string>,
     pid: <string> <MongoDBObjectID 24-bytes>
 }
+```
+
+***
+
+### `api`/`sendMail` - **POST**
+
+#### Request:
+**Body**
+```js
+ {
+    "replyTo": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
+    "to": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
+    "subject": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
+    "cc": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
+    "bcc": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
+    "text": <string>,
+    "html": <string>,
+    "attachments":["?????"]
+}
+```
+#### Response:
+
+**Success**
+
+**body**
+```js
+<Email Transporter Reponse . info>
 ```
 
 ***
