@@ -1,4 +1,4 @@
-##### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
+### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
 
 # User Management System (UMS)
 
@@ -27,8 +27,6 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
 
 #### Response:
 
-**Body**
-
 - **Success**
     
     **Body**
@@ -44,7 +42,6 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
         ```
         status: 200
         ```
-
         **Body**
         ```
         Wrong api key
@@ -74,5 +71,41 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
             'username": <string>,
         }
     "token": <string> <JWT Token>
+}
+```
+- **Errors**
+
+    - `Wrong api key`
+
+        **Header**
+        ```
+        status: 200
+        ```
+        **Body**
+        ```
+        Wrong api key
+        ```
+
+### `api`/`project`  - **POST**
+
+TO add project to specific any user
+
+#### Request:
+
+```js
+{
+    "username": <string>,
+    "name": <string>,
+    "pid": <string> <MongoDBObjectID 24-bytes>
+}
+```
+
+#### Response:
+
+**Success**
+```js
+{
+    name: <string>,
+    pid: <string> <MongoDBObjectID 24-bytes>
 }
 ```
