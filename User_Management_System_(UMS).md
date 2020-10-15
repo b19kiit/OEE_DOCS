@@ -1,4 +1,4 @@
-##### < [INDEX](https://b19kiit.github.io/OEE_DOCS/)
+##### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
 
 # User Management System (UMS)
 
