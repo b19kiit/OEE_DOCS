@@ -12,7 +12,7 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
 
 ## Endpoints
 
-### `api`/`user`/`register`
+### `api`/`user`/`register`  - **POST**
 
 #### Request:
 
@@ -53,7 +53,7 @@ UMS is a stateless micro service, developed to enable ThingsGoSocial users to ac
         
 ***
 
-### `api`/`user`/`login`
+### `api`/`user`/`login`  - **POST**
 
 #### Request:
 
@@ -117,3 +117,7 @@ TO add project to specific any user
     pid: <string> <MongoDBObjectID 24-bytes>
 }
 ```
+
+***
+
+### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
