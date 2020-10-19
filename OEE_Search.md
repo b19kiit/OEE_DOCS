@@ -1,3 +1,5 @@
+### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
+
 # OEE_Search
 
 Oee search is search system built to perform search on TGS SmartFactory, this system is Micro Service of SmartFactory.
@@ -11,3 +13,8 @@ Oee Search come with a front end driver built on socket.io, with 'websocket' tra
 ## OEE_Search Backend
 
 ### Components:
+
+
+
+
+### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
