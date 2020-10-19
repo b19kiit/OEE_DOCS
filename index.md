@@ -9,3 +9,5 @@ The primary job of this product is to boost effiecnent, simplify and digitalize 
 1. [User Management System (UMS)](https://b19kiit.github.io/OEE_DOCS/User_Management_System_(UMS))
     1. [Briefing](https://b19kiit.github.io/OEE_DOCS/User_Management_System_(UMS)#introduction)
     2. [End points](https://b19kiit.github.io/OEE_DOCS/User_Management_System_(UMS)#endpoints)
+
+2. [OEE Search](https://b19kiit.github.io/OEE_DOCS/OEE_Search)
