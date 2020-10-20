@@ -133,7 +133,7 @@ TO add project to any specific user
  {
     "replyTo": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
     "to": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
-    "subject": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
+    "subject": <string>,
     "cc": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
     "bcc": <string> <Email : Regex /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/>,
     "text": <string>,
