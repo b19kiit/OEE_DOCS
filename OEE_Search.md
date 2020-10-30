@@ -71,9 +71,13 @@ Oee Search come with a front end driver built on socket.io, with 'websocket' tra
     - Alter constructor of class 'OEESearch'
     - Replace this.use_id & this.org_id with their JWT TOKENS of user_id & org_id respectively over raw user_id & org_id
     - Replace line which currently has 
+        ```
         {user_id:this_class.use_id, organisation_id:this_class.org_id}
+        ```
         with
+        ```
         {user_token:this_class.use_id, org_token:this_class.org_id}
+        ```
 
 
 Vola, JWT Token integrated :-)
