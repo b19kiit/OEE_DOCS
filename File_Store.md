@@ -65,10 +65,10 @@ volumes:
 
 ```JSON
 {
-  contactPoints:['127.0.0.1:9042'],
-  localDataCenter:"datacenter1",
-  credentials: { username: 'cassandra', password: 'cassandra' },
-  keyspace: 'ks1'
+  "contactPoints":["127.0.0.1:9042"],
+  "localDataCenter":"datacenter1",
+  "credentials": { "username": "cassandra", "password": "cassandra" },
+  "keyspace": "ks1"
 })
 ```
 
