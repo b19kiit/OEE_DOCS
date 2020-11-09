@@ -84,8 +84,18 @@ DESCRIBE KEYSPACES;
 Create Tables
 ```CQL
 USE ks1;
-CREATE TABLE files()
+CREATE TABLE ks1.file_store (
+    id text PRIMARY KEY,
+    buffer blob,
+    owner_id text,
+    time_added bigint,
+    time_expire bigint
+);
+DESCRIBE TABLE ks1.file_store;
 ```
-
+Add Indexes
+```
+Will do this later
+```
 
 ### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
