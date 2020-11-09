@@ -74,4 +74,17 @@ volumes:
 })
 ```
 
+#### Commands to configure keyspace with tables
+
+Create KeySpace
+```CQL
+CREATE KEYSPACE ks1;
+DESCRIBE KEYSPACES;
+```
+Create Tables
+```CQL
+CREATE TABLE files()
+```
+
+
 ### [<INDEX](https://b19kiit.github.io/OEE_DOCS/)
