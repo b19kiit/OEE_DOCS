@@ -83,6 +83,7 @@ DESCRIBE KEYSPACES;
 ```
 Create Tables
 ```CQL
+USE ks1;
 CREATE TABLE files()
 ```
 
