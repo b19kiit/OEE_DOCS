@@ -29,7 +29,7 @@ Perform queries on cassandra DB
   }
   ```
   - On Error :
-  ```
+  ```js
   <Error>
   ```
 
