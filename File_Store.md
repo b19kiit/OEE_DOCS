@@ -25,10 +25,38 @@ This package is built on file_store_bk_driver
 
 This folder stores the JSON files that define the state of individual server + driver combo since the system is designed for horizontal scaling in all the layers.
 ```
-+--- 📁 private
++--- 📁 distribution_config
 +------ 📄 config.json
 +------ 📄 private.json
 +------ 📄 server_manifest.json
++--- 📁 file_processing_driver [ ON HOLD ]
++--- 📁 file_store_bk_driver
++--- 📁 file_store_server
+```
+#### Files in Distribution Config
+
+- **config.json**
+```JSON
+{
+    "server_id":"FS0000"
+}
+```
+- **private.json**
+```JSON
+{
+    "file_access_token_key":"<JWT token private key for file access>",
+    "user_token_key":"<JWT token private key for User verification>"
+}
+```
+- **server_manifest.json**
+```JS
+{
+    "port":<valid port number>,   //server will run on this port, if env.PORT is not defined
+    "fastify_options":{
+        "logger": true,
+        "file": "./server/logs"
+    }
+}
 ```
 
 ## Deployment guide
@@ -81,6 +109,7 @@ Create KeySpace
 CREATE KEYSPACE ks1;
 DESCRIBE KEYSPACES;
 ```
+
 Create Tables
 ```CQL
 USE ks1;
@@ -93,6 +122,7 @@ CREATE TABLE ks1.file_store (
 );
 DESCRIBE TABLE ks1.file_store;
 ```
+
 Add Indexes
 ```
 Will do this later
