@@ -20,12 +20,12 @@ Perform queries on cassandra DB
 > ***Return***
 > `Promise`
   - On Resolve : 
-  ```JSX
+  ```js
   {
-    file_id <string>,
-    owner_id <string>,
-    time_added <number><UNIX epoch time in seconds>,
-    time_expire <number><UNIX epoch time in seconds>
+    file_id, // <string>
+    owner_id, // <string>
+    time_added, // <number><UNIX epoch time in seconds>
+    time_expire // <number><UNIX epoch time in seconds>
   }
   ```
   - On Error :
