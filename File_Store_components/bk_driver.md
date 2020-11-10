@@ -19,19 +19,21 @@ Perform queries on cassandra DB
 
 > ***Return***
 > `Promise`
-  - On Resolve : 
-  ```js
-  {
-    file_id, // <string>
-    owner_id, // <string>
-    time_added, // <number><UNIX epoch time in seconds>
-    time_expire // <number><UNIX epoch time in seconds>
-  }
+>  - On Resolve : 
+  
+```js
+{
+  file_id, // <string>
+  owner_id, // <string>
+  time_added, // <number><UNIX epoch time in seconds>
+  time_expire // <number><UNIX epoch time in seconds>
+}
   ```
-  - On Error :
-  ```js
-  <Error>
-  ```
+>  - On Error :
+  
+```js
+<Error>
+```
 
 
 
