@@ -1,4 +1,4 @@
-### [<INDEX](../OEE_DOCS)
+### [<INDEX](../)
 
 # File Store Backend driver
 
@@ -35,4 +35,4 @@ Perform queries on cassandra DB
 
 
 
-### [<INDEX](../OEE_DOCS/)
+### [<INDEX](../)
