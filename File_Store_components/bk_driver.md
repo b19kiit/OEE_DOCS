@@ -31,7 +31,7 @@ Perform queries on cassandra DB
 }
 ```
 
->  - On Error :
+>  - On Error : 
   
 ```js
 <Error>
@@ -53,7 +53,7 @@ Perform queries on cassandra DB
   achievedConsistency // Number
 ```
 
->  - On Error :
+>  - On Error : 
 ```js
 <Error>
 ```
@@ -73,7 +73,7 @@ Perform queries on cassandra DB
   achievedConsistency // Number
 ```
 
->  - On Error :
+>  - On Error : 
 ```js
 <Error>
 ```
