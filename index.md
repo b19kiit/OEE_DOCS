@@ -16,3 +16,4 @@ The primary job of this product is to boost effiecnent, simplify and digitalize 
     1. [Backend Driver](./File_Store_components/bk_driver)
 
 4. [Chat_System](https://b19kiit.github.io/OEE_DOCS/ChatSystem)
+    1. [storing_messages](https://b19kiit.github.io/OEE_DOCS/Chat_System/storing_messages)
