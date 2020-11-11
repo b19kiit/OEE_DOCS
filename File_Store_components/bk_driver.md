@@ -21,7 +21,8 @@ Perform queries on cassandra DB
 
 > `Promise`
 
->  - On Resolve : 
+>  - On Resolve :
+
 ```js
 {
   file_id, // <string>
@@ -48,12 +49,14 @@ Perform queries on cassandra DB
 
 > `Promise`
 
->  - On Resolve : 
+>  - On Resolve :
+
 ```js
   achievedConsistency // Number
 ```
 
->  - On Error : 
+>  - On Error :
+
 ```js
 <Error>
 ```
@@ -68,12 +71,14 @@ Perform queries on cassandra DB
 
 > `Promise`
 
->  - On Resolve : 
+>  - On Resolve :
+
 ```js
   achievedConsistency // Number
 ```
 
->  - On Error : 
+>  - On Error :
+
 ```js
 <Error>
 ```
