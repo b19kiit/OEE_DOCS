@@ -18,9 +18,10 @@ Perform queries on cassandra DB
 >  - `life_time_seconds`: `<number><time in seconds>`
 
 > ***Return***
+
 > `Promise`
+
 >  - On Resolve : 
-  
 ```js
 {
   file_id, // <string>
@@ -29,6 +30,7 @@ Perform queries on cassandra DB
   time_expire // <number><UNIX epoch time in seconds>
 }
 ```
+
 >  - On Error :
   
 ```js
@@ -38,18 +40,20 @@ Perform queries on cassandra DB
 #### ` expire_file_as_owner_safe `
 
 > ***Arguments***:
+
 >  - `_owner_id`       : `<string ><MongodbOjectId asString>`
 >  - `_file_id`        : `<string>`
 
 > ***Return***
+
 > `Promise`
+
 >  - On Resolve : 
 ```js
   achievedConsistency // Number
 ```
 
 >  - On Error :
-  
 ```js
 <Error>
 ```
@@ -57,17 +61,19 @@ Perform queries on cassandra DB
 #### ` expire_file_as_public_safe `
 
 > ***Arguments***:
+
 >  - `_file_id`        : `<string>`
 
 > ***Return***
+
 > `Promise`
+
 >  - On Resolve : 
 ```js
   achievedConsistency // Number
 ```
 
 >  - On Error :
-  
 ```js
 <Error>
 ```
