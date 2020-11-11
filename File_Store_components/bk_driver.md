@@ -65,10 +65,6 @@ Perform queries on cassandra DB
 > ***Return***
 > `Promise`
 >  - On Resolve : 
-
-> `Promise`
->  - On Resolve : 
-  
 ```js
   achievedConsistency // Number
 ```
