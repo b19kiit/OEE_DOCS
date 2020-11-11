@@ -23,7 +23,7 @@ Perform queries on cassandra DB
 
 >  - On Resolve :
 
-```js
+> ```js
 {
   file_id, // <string>
   owner_id, // <string>
@@ -34,7 +34,7 @@ Perform queries on cassandra DB
 
 >  - On Error : 
   
-```js
+> ```js
 <Error>
 ```
 
@@ -51,13 +51,13 @@ Perform queries on cassandra DB
 
 >  - On Resolve :
 
-```js
+> ```js
   achievedConsistency // Number
 ```
 
 >  - On Error :
 
-```js
+> ```js
 <Error>
 ```
 
@@ -73,13 +73,13 @@ Perform queries on cassandra DB
 
 >  - On Resolve :
 
-```js
+> ```js
   achievedConsistency // Number
 ```
 
 >  - On Error :
 
-```js
+> ```js
 <Error>
 ```
 
