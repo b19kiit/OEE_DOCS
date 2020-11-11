@@ -14,7 +14,7 @@ Perform queries on cassandra DB
 
 > ***Arguments***:
 >  - `buffer`           : `<Buffer>`
->  - `_owner_id`        : `<string ><MongodbOjectId String>`
+>  - `_owner_id`        : `<string><MongodbOjectId asString>`
 >  - `life_time_seconds`: `<number><time in seconds>`
 
 > ***Return***
@@ -28,13 +28,54 @@ Perform queries on cassandra DB
   time_added, // <number><UNIX epoch time in seconds>
   time_expire // <number><UNIX epoch time in seconds>
 }
-  ```
+```
 >  - On Error :
   
 ```js
 <Error>
 ```
 
+#### ` expire_file_as_owner_safe `
 
+> ***Arguments***:
+>  - `_owner_id`       : `<string ><MongodbOjectId asString>`
+>  - `_file_id`        : `<string>`
+
+> ***Return***
+> `Promise`
+>  - On Resolve : 
+
+> `Promise`
+>  - On Resolve : 
+  
+```js
+  achievedConsistency // Number
+```
+>  - On Error :
+  
+```js
+<Error>
+```
+
+#### ` expire_file_as_public_safe `
+
+> ***Arguments***:
+>  - `_file_id`        : `<string>`
+
+> ***Return***
+> `Promise`
+>  - On Resolve : 
+
+> `Promise`
+>  - On Resolve : 
+  
+```js
+  achievedConsistency // Number
+```
+>  - On Error :
+  
+```js
+<Error>
+```
 
 ### [<INDEX](../)
