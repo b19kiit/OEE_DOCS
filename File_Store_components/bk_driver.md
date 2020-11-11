@@ -13,6 +13,7 @@ Perform queries on cassandra DB
 > This funtion generates primarykey for the file, and stores it on the database
 
 > ***Arguments***:
+
 >  - `buffer`           : `<Buffer>`
 >  - `_owner_id`        : `<string><MongodbOjectId asString>`
 >  - `life_time_seconds`: `<number><time in seconds>`
@@ -22,6 +23,7 @@ Perform queries on cassandra DB
 > `Promise`
 
 >  - On Resolve :
+
 ```js
 {
   file_id, // <string>
@@ -32,6 +34,7 @@ Perform queries on cassandra DB
 ```
 
 >  - On Error : 
+
 ```js
 <Error>
 ```
@@ -48,11 +51,13 @@ Perform queries on cassandra DB
 > `Promise`
 
 >  - On Resolve :
+
 ```js
   achievedConsistency // Number
 ```
 
 >  - On Error :
+
 ```js
 <Error>
 ```
@@ -68,11 +73,13 @@ Perform queries on cassandra DB
 > `Promise`
 
 >  - On Resolve :
+
 ```js
   achievedConsistency // Number
 ```
 
 >  - On Error :
+
 ```js
 <Error>
 ```
