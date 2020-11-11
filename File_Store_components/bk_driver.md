@@ -44,13 +44,10 @@ Perform queries on cassandra DB
 > ***Return***
 > `Promise`
 >  - On Resolve : 
-
-> `Promise`
->  - On Resolve : 
-  
 ```js
   achievedConsistency // Number
 ```
+
 >  - On Error :
   
 ```js
@@ -68,6 +65,7 @@ Perform queries on cassandra DB
 ```js
   achievedConsistency // Number
 ```
+
 >  - On Error :
   
 ```js
