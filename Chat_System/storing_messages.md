@@ -13,4 +13,16 @@
 | recived_at | INT UNSIGNED |
 | data | MEDIUMBLOB |
 
-- `messages._id`: Stores index of a messages, it primary key of the messages tables. It is the most squen
+- `messages._id`: Stores index of a messages, it primary key of the messages tables. It is the most squential field of the messages
+
+- `messages.data`: This is blob, which stores buffer data of message lines.
+
+Chat lines is tured to buffer using net_FM request enscapsulation protocol.
+
+```js
+header : { 
+    time : <Number><UNIX epoch time in seconds>,
+    buffer_map : <Array>< [ Number ] >, //size of each chat line
+  }
+body : <Buffer> < [ {ChatLines} ] >
+```
