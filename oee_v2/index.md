@@ -4,7 +4,7 @@
 
 - [Notification](notification)
 
-- [handleIdle](/handle_idle)
+- [handleIdle](/OEE_DOCS/oee_v2/handle_idle)
 
 - handleUnIdle
 
