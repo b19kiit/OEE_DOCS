@@ -2,7 +2,7 @@
 
 ## Essential config
 
-```json
+```
 notification_server : <string><http hostname>
 ```
 
