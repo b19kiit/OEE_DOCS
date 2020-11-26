@@ -4,7 +4,7 @@
 
 - [Notification](notification)
 
-- handleIdle
+- [handleIdle](/handle_idle)
 
 - handleUnIdle
 
