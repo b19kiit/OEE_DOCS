@@ -6,6 +6,6 @@
 
 - [handleIdle](/OEE_DOCS/oee_v2/handle_idle)
 
-- handleUnIdle
+- [handleUnIdle](/OEE_DOCS/oee_v2/handleUnIdle)
 
 - report.js
