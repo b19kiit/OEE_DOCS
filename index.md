@@ -18,4 +18,4 @@ The primary job of this product is to boost effiecnent, simplify and digitalize 
 4. [Chat_System](https://b19kiit.github.io/OEE_DOCS/ChatSystem)
     1. [storing_messages](https://b19kiit.github.io/OEE_DOCS/Chat_System/storing_messages)
 
-5. [OEE_V2](/OEE_DOCS/oee_v2/)
+5. [OEE_V2](https://b19kiit.github.io/OEE_DOCS/oee_v2/)
