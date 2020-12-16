@@ -1,6 +1,8 @@
 # Energy_Monitoring
 
-## `/api/header/`
+## Routes
+
+### `/api/header/`
 
 ***Input***
 
@@ -33,8 +35,7 @@
 }
 ```
 
-## `/api/header/graph/`
-
+### `/api/graph/`
 
 ***Input***
 
@@ -49,6 +50,7 @@
 ```
 
 ***Output***
+
 ```js
 <Array>{
   "vry": <Number>,
@@ -68,6 +70,29 @@
   "currentbilling": <Number>
 }
 ```
+
+### `/api/fetchminutes/`
+
+***Input***
+
+```js
+{
+  HardwareId : <string>, 
+  to : <string><Date>,
+  from : <string><Date>
+}
+```
+
+***Output***
+
+```js
+{
+  Kwh : <Number><seconds>
+  value : <Object><FetchData>
+}
+```
+
+## Classes/Functions
 
 ### class FetchData
 
