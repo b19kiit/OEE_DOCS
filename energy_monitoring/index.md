@@ -32,3 +32,54 @@
     response.voltage_in_vbn  = <Number>
 }
 ```
+
+## `/api/header/graph/`
+
+
+***Input***
+
+```js
+{ 
+  hour: <Number>
+  date: <Number>
+  month: <Number>
+  year: <Number>
+}
+```
+
+***Output***
+```js
+<Array>{
+  "vry": <Number>,
+  "vyb": <Number>,
+  "vbr": <Number>,
+  "vrn": <Number>,
+  "vyn": <Number>,
+  "vbn": <Number>,
+  "ir": <Number>,
+  "iy": <Number>,
+  "ib": <Number>,
+  "electricity_consumption": <Number>,
+  "minutes":<Date>,
+  "time": <Number><UNIX APPX><seconds>,
+  "created_at": <Number><UNIX APPX>,
+  "electricity_consumption": <Number>,
+  "currentbilling": <Number>
+}
+```
+
+### class FetchData
+
+- **constructor (thing_id, end_date, start_date, limit = 100, sort = 'asc', duration, format= true)**
+
+- **services()**
+
+***return***
+
+```js
+<Promise>{
+  resolve : {
+    
+  }
+}
+```
