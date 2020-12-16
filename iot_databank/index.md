@@ -109,3 +109,20 @@ Input
 }
 ```
 
+### GET`/api/lastlog/` : last_log (latest log)
+
+Input
+```js
+{ limit:<Number> }
+```
+
+### GET`/api/lastlog/test` : last_testlog (latest test log)
+
+Input
+```js
+{ limit:<Number> }
+```
+
+### POST`/deploy` : start script to check webhook
+Output : `Okay`
+
