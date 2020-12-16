@@ -135,3 +135,90 @@ Input :
 ### POST`/deploy` : start script to check webhook
 Output : `Okay`
 
+...
+
+## timeSeries function
+
+- **getYearDateRange(year)**
+
+***return*** : { start: <Date><year start>, end: <Date><year end> }
+
+- **getMonthDateRange(year, month)**
+
+***return*** : { start: <Date><month start>, end: <Date><month end> }
+
+- **matchHardware(hardware_id)**
+
+***return*** :
+
+```
+$match: {
+    "hardware_id" : hardware_id
+}
+```
+
+- **projectWithTimeZone(timezone)**
+
+***return*** :
+
+```
+$project: {
+    "_id" : {
+	day:   {   $dayOfMonth:     {   date:'$timestamp_hour', timezone: timezone } },
+	week:   {   $week:     		{   date:'$timestamp_hour', timezone: timezone } },
+	month:  {   $month:         {   date:'$timestamp_hour', timezone: timezone } },
+	year:   {   $year:          {   date:'$timestamp_hour', timezone: timezone } },
+	hour:   {   $hour:          {   date:'$timestamp_hour', timezone: timezone } },
+	minute:   {   $minute:      {   date:'$timestamp_hour', timezone: timezone } }, 
+    },
+    "hardware_id" : "$hardware_id",
+    "timestamp": "$timestamp_hour",
+    "values" : {
+	"$objectToArray" : "$values"
+    }
+}
+```
+
+- **filterDateRange(fromDate, toDate)**:
+
+***return*** :
+
+```
+{ 
+  $match: {
+  	timestamp : { $gte: fromDate }  // 'gte' : '>'
+	timestamp = { $lte: toDate }    // 'lte' : '<'
+  }
+}
+```
+
+- **sortOrder(order)**
+
+***return*** :
+
+```
+{ 
+  $match: {
+  	timestamp : { $gte: fromDate }  // 'gte' : '>'
+	timestamp = { $lte: toDate }    // 'lte' : '<'
+  }
+}
+```
+
+- **setLimit(limit)**
+
+***return***
+
+```
+$sort: {
+    "created_at": (order === 'asc'? 1:-1)
+}
+```
+
+- **getMinuteQuery(options)**
+
+***options*** : `{ from<Date>, to<Date> }`
+
+- **getOnDemandMinuteQuery(options)**
+
+***options*** : `{ from<Date>, to<Date> }`
