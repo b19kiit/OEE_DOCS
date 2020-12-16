@@ -2,7 +2,7 @@
 
 ## Routes
 
-### list
+### GET`/api/databanks/` : list
 
 - **Input** :
 ```js
@@ -29,7 +29,7 @@
 }
 ```
 
-### listSeries
+### GET`/api/databanks/series` : listSeries
 
 - **Input** :
 ```js
@@ -56,7 +56,7 @@
 }
 ```
 
-### graph_list
+### GET`/api/databanks/graph` : graph_list
 
 - **Input**
 ```js
@@ -67,10 +67,45 @@
 }
 ```
 
-- **Output**
+### POST`/api/databanks/upload` : uploadExistingRecords
 
+- **Input**
 ```js
 {
-
+  hardware_id : <string>
+  created_at : <string><Date>
+  values : <Object> //update set
 }
 ```
+
+### GET`/api/databanks/oeedata` : sendData
+
+Input
+```js
+{
+  hid:<string>,
+  from:<string><Date>
+  to:<string><Date>
+}
+```
+
+### POST`/api/databanks/machine` : createMachineEntry
+
+Input
+```js
+{
+  hid:<string>,
+  c:<string><Date>
+}
+```
+
+### POST`/api/databanks/meter` : createMeterEntry
+
+Input
+```js
+{
+  tid:<string>
+  me:<string>
+}
+```
+
