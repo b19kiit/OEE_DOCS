@@ -217,8 +217,12 @@ $sort: {
 
 - **getMinuteQuery(options)**
 
-***options*** : `{ from<Date>, to<Date> }`
+***options*** : `{ from<Date>, to<Date>, sort, limit }`
+
+This function combines multiple queries with respective time zones and returns mongodb aggregation querie array.
 
 - **getOnDemandMinuteQuery(options)**
 
 ***options*** : `{ from<Date>, to<Date> }`
+
+This function combines multiple queries with respective time zones and returns mongodb agregation querie array for specific creation range and controlled projection in aggregation querie end.
