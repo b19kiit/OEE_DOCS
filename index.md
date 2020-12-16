@@ -19,3 +19,5 @@ The primary job of this product is to boost effiecnent, simplify and digitalize 
     1. [storing_messages](https://b19kiit.github.io/OEE_DOCS/Chat_System/storing_messages)
 
 5. [OEE_V2](https://b19kiit.github.io/OEE_DOCS/oee_v2/)
+
+6. [IOT Databank](https://b19kiit.github.io/OEE_DOCS/iot_databank/)
