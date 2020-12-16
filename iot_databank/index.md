@@ -19,7 +19,8 @@
 }
 ```
 
-- **Output**
+- **Output** :
+
 ```js
 <Array>{
   timestamp_hour: <Date>,
@@ -32,6 +33,7 @@
 ### GET`/api/databanks/series` : listSeries
 
 - **Input** :
+
 ```js
 {
   hid : <string>
@@ -46,7 +48,8 @@
 }
 ```
 
-- **Output**
+- **Output** :
+
 ```js
 <Array>{
   timestamp_hour: <Date>,
@@ -58,7 +61,8 @@
 
 ### GET`/api/databanks/graph` : graph_list
 
-- **Input**
+- **Input** :
+
 ```js
 {
   year:<Number>
@@ -69,7 +73,8 @@
 
 ### POST`/api/databanks/upload` : uploadExistingRecords
 
-- **Input**
+- **Input** :
+
 ```js
 {
   hardware_id : <string>
@@ -80,7 +85,8 @@
 
 ### GET`/api/databanks/oeedata` : sendData
 
-Input
+Input :
+
 ```js
 {
   hid:<string>,
@@ -91,7 +97,8 @@ Input
 
 ### POST`/api/databanks/machine` : createMachineEntry
 
-Input
+Input :
+
 ```js
 {
   hid:<string>,
@@ -101,7 +108,8 @@ Input
 
 ### POST`/api/databanks/meter` : createMeterEntry
 
-Input
+Input :
+
 ```js
 {
   tid:<string>
@@ -111,14 +119,15 @@ Input
 
 ### GET`/api/lastlog/` : last_log (latest log)
 
-Input
+Input :
 ```js
 { limit:<Number> }
 ```
 
 ### GET`/api/lastlog/test` : last_testlog (latest test log)
 
-Input
+Input :
+
 ```js
 { limit:<Number> }
 ```
