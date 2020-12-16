@@ -40,6 +40,7 @@
 
 ```js
 { 
+  data_limit: <string><options 'minutely', 'hourly', 'daily', 'weekly'>
   hour: <Number>
   date: <Number>
   month: <Number>
